@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "Audit the structural integrity, color consistency, and implementation coherence of a Design System from tokens to code. Generates a scored intelligence report with prioritized, actionable recommendations.",
   "author": {
-    "name": "Cursor",
-    "email": "plugins@cursor.com"
+    "name": "Cristina Sánchez",
+    "email": "hola@cristinasanchez.pro"
   },
   "license": "MIT",
   "keywords": [
