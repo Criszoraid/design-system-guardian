@@ -48,5 +48,3 @@ Or install from the Cursor plugin marketplace (when published).
 ## License
 
 MIT
-
-<!-- trigger commit -->
