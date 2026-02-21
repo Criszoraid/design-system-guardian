@@ -1,0 +1,32 @@
+---
+description: Light real-time detection of hardcoded colors, inline styles, and repeated dimension values. Warn only; do not block. Suggests token or variable usage where appropriate.
+alwaysApply: true
+globs: ["**/*.{css,scss,js,jsx,ts,tsx,vue}"]
+---
+
+# Token enforcement (advisory)
+
+When editing styles or UI code in this workspace, warn only; suggest token or variable usage where appropriate. **Do not block or refuse edits.**
+
+## Scope and exclusions
+
+- **Do not warn inside test files** (e.g. `*.test.*`, `*.spec.*`, `__tests__/`, `*.test.js`, `*.spec.tsx`).
+- **Ignore** paths under `node_modules/`, `dist/`, and `build/`. Do not run checks in these folders.
+
+## When to warn
+
+1. **Hardcoded colors**: Warn **only** if:
+   - the same hardcoded color value appears **more than once** in the codebase (or in the same file), or
+   - the value **matches a color already defined in design tokens** (suggest that token instead).
+   Do not warn on a single occurrence that does not match an existing token.
+
+2. **Inline styles**: Prefer classes or design-system components over inline `style={{ ... }}` or `style="..."` for layout and colors. Warn when inline styles are used for tokenizable values; do not block.
+
+3. **Repeated dimensions**: If the same spacing/size value appears in multiple places, suggest extracting to a token or variable. Warn only; do not block.
+
+## Constraint: reduce noise
+
+- **Keep each warning under 2 sentences.** Be concise.
+- **Do not repeat the same warning multiple times in the same file.** One warning per distinct issue type per file (e.g. one warning for "hardcoded color X" in that file, not one per line).
+
+This rule is advisory: **warn** and **suggest** only; never block or refuse edits.

@@ -1,0 +1,23 @@
+{
+  "name": "design-system-guardian",
+  "displayName": "Design System Guardian",
+  "version": "1.0.0",
+  "description": "Audit the structural integrity, color consistency, and implementation coherence of a Design System from tokens to code. Generates a scored intelligence report with prioritized, actionable recommendations.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "design-system",
+    "tokens",
+    "audit",
+    "consistency",
+    "guardian"
+  ],
+  "category": "developer-tools",
+  "tags": ["design", "lint", "quality"],
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "rules": "./rules/"
+}

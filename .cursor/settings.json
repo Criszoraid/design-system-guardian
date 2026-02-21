@@ -1,0 +1,6 @@
+{
+  "plugins": {
+    "create-plugin": { "enabled": true },
+    "design-system-guardian": { "enabled": true }
+  }
+}
