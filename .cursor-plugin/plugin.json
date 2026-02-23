@@ -19,5 +19,6 @@
   "tags": ["design", "lint", "quality"],
   "commands": "./commands/",
   "agents": "./agents/",
-  "rules": "./rules/"
+  "rules": "./rules/",
+  "logo": "logo_guardian.svg"
 }

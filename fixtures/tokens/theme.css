@@ -1,0 +1,24 @@
+/* Design tokens de ejemplo para probar la auditoría */
+:root {
+  /* Colors - primitives */
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-500: #6b7280;
+
+  /* Semantic */
+  --color-primary: var(--color-blue-500);
+  --color-primary-hover: var(--color-blue-600);
+  --color-background: var(--color-gray-100);
+  --color-border: var(--color-gray-200);
+  --color-text-muted: var(--color-gray-500);
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  /* gap: no --space-5 on purpose (missing scale step for audit) */
+}
